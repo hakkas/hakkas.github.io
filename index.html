@@ -3,8 +3,99 @@
   <head>
     <meta charset="utf-8">
     <title>Hakan Akkas</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      .bg-1 {
+        background-color: #080C3B; /* Green */
+        color: #7E82B1;
+      }
+
+      .bg-2 {
+        background-color: #323776; // 545993; /* Green */
+        color: #7E82B1;
+      }
+
+      .bg-2 {
+        background-color: #545993; /* Green */
+        color: #7E82B1;
+      }
+
+
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+    </style>
   </head>
   <body>
-    bla
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HOME</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.ictindewolken.nl/amsterdam/">ICT IN DE WOLKEN</a></li>
+            <li><a href="http://www.coderclass.nl">CODERCLASS</a></li>
+            <li><a href="https://www.facebook.com/RoboticaclubMetis/">ROBOICACLUB METIS</a></li>
+            <li><a href="https://www.hetmml.nl">MML</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid bg-1 text-center">
+      <h3>Hakan Akkas</h3>
+      <img class="img-circle" src="images/hakan.jpg" alt="Hakan Akkas">
+      <h3>Docent informatica op het Metis Montessori Lyceum</h3>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+      <h3>Ik houd mij bezig met de ...</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Coderclass</p>
+          <img src="birds1.jpg" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>ICT in de wolken</p>
+          <img src="birds2.jpg" alt="Image">
+        </div>
+        <div class="col-sm-4">
+          <p>Roboticaclub Metis</p>
+          <img src="birds3.jpg" alt="Image">
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

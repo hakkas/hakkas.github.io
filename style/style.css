@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 .kol1{
   background-color: lightgrey;
 }
@@ -70,4 +74,23 @@ color: #1abc9c !important;
   width: 200px;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper > .container-fluid {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+.bg-2 {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
 }

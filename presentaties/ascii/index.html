@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Digitalisering van tekst</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<meta name="author" content="Hakan Akkas">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Digitalisering van tekst</h1>
+					<p>
+						<small>Door <a href="https://hakkas.github.io/">Hakan Akkas</a> / <a href="http://twitter.com/hakan_akkas">@hakan_akkas</a></small>
+					</p>
+				</section>
+
+				<section id="fragments">
+					<h2>Wat hebben we behandeld?</h2>
+					<ul>
+						<li class="fragment">De computer die met 0'en en 1'en werkt</li>
+						<li class="fragment">Opbouw van binaire getallen</li>
+						<li class="fragment">Omzetten van decimale getallen naar binair en andersom</li>
+						<li class="fragment">Verschillende bewerkingen met binaire getallen (+, -, *)</li>
+						<li class="fragment">Hexadecimale getallen</li>
+						<li class="fragment">Omzetten van hexadecimaal naar decimaal</li>
+						<li class="fragment">Omzetten van hexadecimaal naar binair (en andersom)</li>
+					</ul>
+				</section>
+
+				<section id="fragments">
+					<h2>Nu: het digitaliseren van tekst</h2>
+					<p>Coderen van tekst bestaat al heel lang ..</p>
+				</section>
+
+				<section id="pythonvb">
+					<h2>Python functies:</h2>
+					<iframe src="https://trinket.io/embed/python3/db62ae0f7a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

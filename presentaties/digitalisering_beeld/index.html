@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Digitalisering van tekst</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+
+		<meta name="author" content="Hakan Akkas">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Digitalisering van beeld</h1>
+					<p>
+						<small>Door <a href="https://hakkas.github.io/">Hakan Akkas</a> / <a href="http://twitter.com/hakan_akkas">@hakan_akkas</a></small>
+					</p>
+				</section>
+
+				<section id="behandeld">
+					<h2>Wat hebben we behandeld?</h2>
+					<ul>
+						<li class="fragment">Digitalisering van getallen</li>
+						<li class="fragment">Digitalisering van tekst</li>
+					</ul>
+				</section>
+
+				<section id="fragments">
+					<h1>Nu</h1>
+					<h1 class="fragment">het digitaliseren van beeld</h1>
+				</section>
+
+				<section>
+					<h2>Er zijn meerdere manieren om beeld digitaal op te slaan</h2>
+					<ul>
+						<li>Als rasterafbeelding</li>
+							<ul>
+								<li>Bitmap - 1bit (zwart of wit)</li>
+								<li>Bitmap - 24 bits (voor elke pixel 3 bytes opslaan (r-g-b))</li>
+								<li>GIF</li>
+								<li>JPG</li>
+								<li>PNG</li>
+							</ul>
+						<li>Als vectorafbeelding</li>
+						<ul>
+							<li>Soorten bestandsformaten: .svg, .ai, .eps, etc</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Eerst over beeldopslag als rasterafbeelding</h1>
+				</section>
+
+				<section>
+						<h1>Bitmap</h1>
+						<p>Een plaatje heeft een resolutie. Bijvoorbeeld: 1024 * 680</p>
+						<p>In totaal 1024 * 680 pixels.</p>
+						<p>Per pixel opslaan of het zwart/wit is</p>
+						<img src="img/bitmap1bit.png" alt="">
+						<p>Per pixel dus 1 bit opslaan (monochroom)</p>
+				</section>
+
+				<section>
+					<h1>Hoeveel ruimte neemt dit dan in beslag? Hoeveel kilo bytes?</h1>
+				</section>
+
+				<section>
+					<h2>Even wat maateenheden</h2>
+					<ul>
+						<li>1 byte = 8 bits</li>
+						<li>1 kilobyte = 1024 bytes</li>
+						<li>1 megabyte = 1024 kilobytes</li>
+						<li>1 gigabyte = 1024 megabytes</li>
+						<li>1 terrabyte = 1024 gigabytes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Hoe groot kan een normale foto dan worden?</h2>
+					<h2>Een voorbeeld</h2>
+					<p>Resolutie van een foto op je smartphone: 4032×3024</p>
+					<p>In totaal dus 12192768 pixels!</p>
+					<p>Als we uitgaan van een 24-bits per pixel plaatje, dan is 12192768*24 = 292626432 bits = 36578304 bytes = 34.88379 mega bytes!!</p>
+				</section>
+
+				<section>
+					<h2>Compressie</h2>
+					<p>Verkleinen van de afbeelding</p>
+					<p>Twee soorten</p>
+					<ul>
+						<li>met informatieverlies (lossy compression)</li>
+						<li>zonder informatieverlies (lossless)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Run Length Encoding</h2>
+					<img src="img/figuren zonder comp.png" alt="">
+				</section>
+
+				<section>
+					<h2>Run Length Encoding</h2>
+					<img src="img/comp figuren.png" alt="">
+				</section>
+
+				<section>
+					<h2>Run Length Encoding</h2>
+					<img src="img/de a.png" alt="">
+				</section>
+
+				<section>
+					<h2>JPG</h2>
+					<p>Lossy compression</p>
+					<img src="jpg compressie.png" alt="">
+				</section>
+
+				<section>
+					<h2>GIF</h2>
+					<p>Lossy compression (bij teveel kleuren)</p>
+					<p>Eerst een kleurenpalet maken van de meest gebruikte kleuren in de afbeelding</p>
+					<p>Vervolgens pixel bij pixel aangeven welke kleur</p>
+				</section>
+
+				<section>
+					<h2>PNG</h2>
+					<p>Bij elke kleur ook een transparantie aangeven (kan niet in JPG)</p>
+
+				</section>
+
+				<section>
+					<h2>Vectorafbeeldingen</h2>
+					<p>Wiskundig beschrijven van alle lijnen en figuren</p>
+					<img src="img/raster-pixels-vs-vectors.jpg" alt="">
+					<p>Bij vergroten en verkleinen geen informatieverlies</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

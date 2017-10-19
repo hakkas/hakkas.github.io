@@ -33,13 +33,13 @@
 					</p>
 				</section>
 
-				<section id="fragments">
+				<section id="behandeld">
 					<h2>Wat hebben we behandeld?</h2>
 					<ul>
 						<li class="fragment">De computer die met 0'en en 1'en werkt</li>
 						<li class="fragment">Opbouw van binaire getallen</li>
 						<li class="fragment">Omzetten van decimale getallen naar binair en andersom</li>
-						<li class="fragment">Verschillende bewerkingen met binaire getallen (+, -, *)</li>
+						<li class="fragment">Bewerkingen met binaire getallen (+, -, *)</li>
 						<li class="fragment">Hexadecimale getallen</li>
 						<li class="fragment">Omzetten van hexadecimaal naar decimaal</li>
 						<li class="fragment">Omzetten van hexadecimaal naar binair (en andersom)</li>
@@ -48,7 +48,7 @@
 
 				<section id="fragments">
 					<h1>Nu</h1>
-					<h1>het digitaliseren van tekst</h1>
+					<h1 class="fragment">het digitaliseren van tekst</h1>
 				</section>
 
 				<section>
@@ -59,7 +59,7 @@
 						<li>Romeinen</li>
 						<li>Chinezen</li>
 					</ul>
-					<p>Eenvoudige en complexere signalen</p>
+					<p>Eenvoudige (maar ook complexere) signalen</p>
 					<p>Belangrijk zijn de afspraken tussen zender en ontvanger</p>
 				</section>
 
@@ -67,11 +67,12 @@
 					<h2>Morse code</h2>
 					<ul>
 						<li>Bedacht door: <a href="https://nl.wikipedia.org/wiki/Samuel_Morse">Samuel Morse (1791-1872)</a></li>
-						<li>Communiceren over afstand met telegrafie</li>
+						<li>Communiceren over afstand middels telegrafie</li>
 						<li>Elke letter een code</li>
 					</ul>
 					<img src="img/alfabet-morse.png" alt="morse alfabet">
 				</section>
+
 				<section>
 					<h2>Demonstratie morse code</h2>
 
@@ -80,14 +81,116 @@
 				</section>
 
 				<section>
-					
+					<h2>Even een tijdlijn</h2>
+					<ul>
+						<li>Vanaf 1940: Ontwikkeling computer</li>
+						<li>1952: Eerste computer in Nederland (CWI)</li>
+						<li>+/- 1960: Bob Bemer: Computers als communicatiemiddel</li>
+						<li>Vanaf 1970: Opkomst homecomputers</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Geboorte van ASCII</h2>
+					<p><b>A</b>merican <b>S</b>tandard <b>C</b>ode for <b>I</b>nformation <b>I</b>nterchange</p>
+					<p>Stel dat we elke letter een getal geven ...</p>
+					<table class="fragment" style="width: 100%; font-size: 20px">
+						<tr>
+							<td>a</td>
+							<td>b</td>
+							<td>c</td>
+							<td>d</td>
+							<td>e</td>
+							<td>f</td>
+							<td>g</td>
+							<td>h</td>
+							<td>i</td>
+							<td>j</td>
+							<td>k</td>
+							<td>l</td>
+							<td>m</td>
+							<td>n</td>
+							<td>o</td>
+							<td>p</td>
+							<td>q</td>
+							<td>r</td>
+							<td>s</td>
+							<td>t</td>
+							<td>u</td>
+							<td>v</td>
+							<td>w</td>
+							<td>x</td>
+							<td>y</td>
+							<td>z</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+					</tr>
+				</table>
+				<p class="fragment">Hoe zou ik dan het woord <i>hallo</i> coderen?</p>
+				<p class="fragment">8 1 12 12 15</p>
+				</section>
+
+				<section>
+					<h2>Maar er is meer</h2>
+					<ul>
+						<li>Hoofdletters</li>
+						<li>Leestekens , . : etc</li>
+						<li>Andere symbolen # @ () [] {} etc</li>
+					</ul>
+					<p>We hebben dus meer getallen nodig ...</p>
+					<p>ASCII is een 7-bits codering, hoeveel karakters kun je daarmee coderen?</p>
+				</section>
+
+				<section>
+					<h2>De ASCII tabel</h2>
+					<img src="img/ascii.gif" alt="ascii">
+				</section>
+
+				<section>
+					<h2>Foutcontrole</h2>
+					<p>Computer werkt vaak met bytes (8 bits)</p>
+					<p>8ste bit in ASCII?</p>
+					<ul>
+						<li>Negeren (gewoon 0)</li>
+						<li>Foutcontrole!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Parity bit</h2>
+					<img src="img/evenpariteit.gif" alt="">
 				</section>
 
 				<section id="pythonvb">
 					<h2>Python functies:</h2>
 					<iframe src="https://trinket.io/embed/python3/db62ae0f7a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 				</section>
-
 
 			</div>
 		</div>

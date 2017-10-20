@@ -42,21 +42,21 @@
 					</ul>
 				</section>
 
-				<section id="fragments">
-					<h1>Nu</h1>
-					<h1>het digitaliseren van geluid!</h1>
+				<section>
+					<h1>Nu ...</h1>
+					<h1 class="fragment">het digitaliseren van geluid!</h1>
 				</section>
 
 				<section>
 					<h2>Geluid</h2>
-					<img class="fragment" src="img/analoog.png" alt="" style="width: 200px;">
+					<img class="fragment" src="img/analoog.png" alt="" style="width: 300px;">
 					<p class="fragment">Even inzoomen</p>
-					<img class="fragment" src="img/analoog2.png" alt="" style="width: 200px;">
+					<img class="fragment" src="img/analoog2.png" alt="" style="width: 300px;">
 				</section>
 
 				<section>
 					<h2>Sampling</h2>
-					<img class="fragment" src="img/analoognaardigitaal.png" alt="" style="width: 400px;">
+					<img class="fragment" src="img/analoognaardigitaal.png" alt="" style="width: 500px;">
 					<p class="fragment">Aantal keren per seconde de hoogte van de golf meten</p>
 				</section>
 
@@ -76,6 +76,34 @@
 					</table>
 				</section>
 
+				<section>
+					<section>
+						<h2>Rekensom!</h2>
+						<p>De standaard sample rate voor CD’s is bijvoorbeeld 44.1 kHz. Dat betekent dat elke <i>seconde</i> van je opname uit 44100 samples bestaat.</p>
+						<p>En de standaard bit depth is 16 bits. (studiowereld -&gt; 24 bits)</p>
+						<p>Hoe groot wordt een geluidsbestand van 3 minuten met een sample rate van 44.1 kHz en een bit depth van 16 bits?</p>
+
+					</section>
+					<section>
+						<p class="fragment">Hoeveel samples in totaal? 44100 * 180 seconden = 7938000 samples</p>
+						<p class="fragment">Samples * aantal bits per sample = 7938000 * 16 bits = 127008000 bits</p>
+						<p class="fragment">Omzetten naar bytes = 127008000 / 8 = 15876000</p>
+						<p class="fragment">Omzetten naar kilobytes = 15876000 / 1024 = 15503 megabytes </p>
+						<p class="fragment">Omzetten naar megabytes = 15503 / 1024 = 15 megabytes</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Compressie</h2>
+					<ul>
+						<li>MP3 (MPEG-1 Layer 3)</li>
+						<li>Slim opslaan van herhalingen</li>
+						<li>Ook beperkte toonhoogte</li>
+						<li>Dus.... lossless of lossy compressie???</li>
+						<li class="fragment">Lossy natuurlijk!</li>
+					</ul>
+
+				</section>
 
 			</div>
 		</div>
